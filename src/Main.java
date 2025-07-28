@@ -32,13 +32,22 @@ public class Main {
         devCamila.setNome("Camila");
         devCamila.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos inscritos: " + devCamila.getConteudoInscritos());
+        devCamila.progredir();
+        System.out.println("---");
+        System.out.println("Conteúdos inscritos: " + devCamila.getConteudoInscritos());
         System.out.println("Conteúdos concluídos: " + devCamila.getConteudosConcluidos());
+        System.out.println("XP: " + devCamila.calcularXp());
 
         Dev devJoao = new Dev();
         devJoao.inscreverBootcamp(bootcamp);
         devJoao.setNome("João");
         System.out.println("Conteúdos inscritos: " + devJoao.getConteudoInscritos());
+        devJoao.progredir();
+        System.out.println("---");
+        System.out.println("Conteúdos inscritos: " + devJoao.getConteudoInscritos());
         System.out.println("Conteúdos concluídos: " + devJoao.getConteudosConcluidos());
+        System.out.println("XP: " + devJoao.calcularXp());
+
 
     }
 }
